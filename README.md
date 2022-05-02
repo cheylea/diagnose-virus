@@ -7,17 +7,18 @@ This app is a diagnosing tool that can be used to predict the likelihood of a us
 
 The functionality is as follows:
 * Load the file into a Prolog environment
-* Run the diagnosis programme
+* Run the diagnosis program
 * Output a predication and related advice on next action.
 
 ## Prerequisites
 The file uses Prolog. It is recommended to use [SWI-Prolog](https://www.swi-prolog.org/build/) to run the code.
 
 ## Directory
-The below directory shows this files in this project.
+The below directory shows the files in this project.
 ```
 C:.
-├───LICENSE.
+├───brief.md
+├───LICENSE
 ├───README.md
 └───virus.pl
 ```
@@ -40,7 +41,7 @@ Run the file by entering the following:
 The window will begin asking questions about the condition of the user. Answer the questions by answering either `y.` for yes or `n.` for no.
 
 ## Interpreting Results
-The file will provide an assessment of the likelihood that the user has contracted the virus, alongside some Advise based on rick factors provided by the user.
+The file will provide an assessment of the likelihood that the user has contracted the virus, alongside some advice based on rick factors provided by the user.
 
 ### Example Result:
 
@@ -51,4 +52,4 @@ You have severe symptoms, please seek medical attention immediately.
 ```
 
 ## Design
-The programme scores each question based on the answer and ranks each result based on specified thresholds.
+The program scores each question based on the answer and ranks each result based on specified thresholds.

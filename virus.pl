@@ -1,5 +1,6 @@
 % Diagnose Virus
 
+
 % This part controls the main functionality order
 diagnose :-
 runAssessment,
@@ -15,7 +16,7 @@ checkSymptom(cough),
 checkSymptom(tiredness),
 checkSymptom(aches),
 checkSymptom(throat),
-checkSymptom(diarrhoea),
+checkSymptom(diarrhea),
 checkSymptom(conjunctivitis),
 checkSymptom(headache),
 checkSymptom(smell),
@@ -30,7 +31,7 @@ checkExposure(positive).
 
 % Checks the gender in order to determine if slightly higher risk as a male
 checkGender :-
-	write('Are you biologically male (y or n) ?'),
+	write('Are you assigned male at birth (y or n) ?'),
     read(Reply),
 	nl,
 	( Reply == y
@@ -110,15 +111,15 @@ checkSymptom(throat) :-
 	assert(symptom(throat));
 	assert(symptom(nothroat))).
 
-% Check if user has has any diarrhoea
-checkSymptom(diarrhoea) :-
-	write('Have you had any recent bouts of diarrhoea (y or n) ?'),
+% Check if user has has any diarrhea
+checkSymptom(diarrhea) :-
+	write('Have you had any recent bouts of diarrhea (y or n) ?'),
     read(Reply),
 	nl,
 	( Reply == y
 	->
-	assert(symptom(diarrhoea));
-	assert(symptom(nodiarrhoea))).
+	assert(symptom(diarrhea));
+	assert(symptom(nodiarrhea))).
 
 % Check if user has conjunctivitis
 checkSymptom(conjunctivitis) :-
@@ -142,7 +143,7 @@ checkSymptom(headache) :-
 
 % Check if user has lost any sense of smell or taste
 checkSymptom(smell) :-
-	write('Have you had either total or partial loss of sense of smell and/or taste (y or n) ?'),
+	write('Have you had either total or partial loss of smell and/or taste (y or n) ?'),
     read(Reply),
 	nl,
 	( Reply == y
@@ -243,7 +244,7 @@ scoring :-
 	(symptom(tiredness) -> Score6 is 1; Score6 is 0),
 	(symptom(aches) -> Score7 is 1; Score7 is 0),
 	(symptom(throat) -> Score8 is 1; Score8 is 0),
-	(symptom(diarrhoea) -> Score9 is 1; Score9 is 0),
+	(symptom(diarrhea) -> Score9 is 1; Score9 is 0),
 	(symptom(conjunctivitis) -> Score10 is 1; Score10 is 0),
 	(symptom(headache) -> Score11 is 1; Score11 is 0),
 	(symptom(smell) -> Score12 is 1; Score12 is 0),
