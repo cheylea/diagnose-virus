@@ -54,3 +54,6 @@ You have severe symptoms, please seek medical attention immediately.
 
 ## Design
 The program scores each question based on the answer and ranks each result based on specified thresholds.
+
+## Contributing
+Pull requests permitted. When contributing please update files as appropriate with any additional requirements.
