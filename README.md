@@ -11,7 +11,7 @@ The functionality is as follows:
 * Output a predication and related advice on next action.
 
 ## Prerequisites
-The file uses [Prolog](https://nodejs.org/en/download/). It is recommended to use [SWI-Prolog](https://www.swi-prolog.org/build/) to run the code.
+The file uses Prolog. It is recommended to use [SWI-Prolog](https://www.swi-prolog.org/build/) to run the code.
 
 ## Directory
 The below directory shows this files in this project.
