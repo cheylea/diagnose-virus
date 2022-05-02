@@ -17,7 +17,8 @@ The file uses Prolog. It is recommended to use [SWI-Prolog](https://www.swi-prol
 The below directory shows the files in this project.
 ```
 C:.
-├───brief.md
+└───docs
+|    └───brief.md
 ├───LICENSE
 ├───README.md
 └───virus.pl
